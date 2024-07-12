@@ -1,10 +1,12 @@
-import React from 'react'
+import React from 'react';
+import Navbar from './Navbar';
 
 const Home_Page = () => {
     return (
         <>
             <div>
-                <div className=''>Food Recipe App</div>
+                {/* <div className=''>Food Recipe App</div> */}
+                <Navbar/>
             </div>
         </>
     )

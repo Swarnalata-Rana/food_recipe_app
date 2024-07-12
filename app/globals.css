@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    background-color: rgb(224, 197, 241);
+    color: #fff;
+}
+
+.navbar{
+    /* border: solid 1px black; */
+    height: 130px;
+    background-color: rgb(143, 49, 231);
+    color: #fff;
+    padding: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+
+    .navbar h1, .navbar h2 {
+        margin: 10px 0;
+    }
+}
