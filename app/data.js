@@ -1,4 +1,4 @@
-const receiptData = [
+const receipData = [
     {
       id: 1,
       name: "Veggie Delight",

@@ -1,4 +1,33 @@
+/* NavBar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  background-color: rgb(200, 182, 211);
+  color: #fff;
+}
+
+.navbar {
+  /* border: solid 1px black; */
+  height: 130px;
+  background-color: rgb(143, 49, 231);
+  color: #fff;
+  padding: 20px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 /* SearchBar */
+.main_div {
+  text-align: center;
+  margin-top: 70px;
+}
+
 .inputTag {
   border: none;
   border-bottom: 2px solid rgb(143, 49, 231);
@@ -8,13 +37,74 @@
   text-align: center;
   outline: none;
 }
+
 .search-btn {
   background-color: rgb(143, 49, 231);
   color: white;
   border-radius: 7px;
-  font-size: 25px;
+  font-size: 20px;
+  padding: 8px;
+}
+/* RecipePage */
+.box{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-top: 70px;
+}
+.box-shadow {
+  width: 400px;
+  height: 500px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 20px;
+  box-shadow:0 0 10px rgba(197, 30, 30, 0.2);
+  background-color: white;
 
 }
-.main_div {
+.rounded-corners {
+  border-radius: 10px;
+}
+/* footer */
+.footerTag{
+  height: 250px;
+  background-color: rgb(119, 30, 202);
+  color: #fff;
+  font-size: 40px;
   text-align: center;
+}
+
+/* NavBar */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  .navbar h1,
+  .navbar h2 {
+    margin: 10px 0;
+  }
+}
+
+/* SearchBar */
+@media (max-width: 768px) {
+  .main_div {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  .inputTag {
+    font-size: 12px;
+    padding: 8px;
+    width: 100%;
+  }
+
+  .search-btn {
+    font-size: 16px;
+    padding: 6px;
+    width: auto;
+  }
 }
