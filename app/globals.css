@@ -1,0 +1,20 @@
+/* SearchBar */
+.inputTag {
+  border: none;
+  border-bottom: 2px solid rgb(143, 49, 231);
+  background-color: transparent;
+  padding: 10px;
+  font-size: 15px;
+  text-align: center;
+  outline: none;
+}
+.search-btn {
+  background-color: rgb(143, 49, 231);
+  color: white;
+  border-radius: 7px;
+  font-size: 25px;
+
+}
+.main_div {
+  text-align: center;
+}
