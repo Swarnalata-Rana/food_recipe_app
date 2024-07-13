@@ -3,29 +3,51 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'georgia';
 }
 
 body {
-  background-color: rgb(200, 182, 211);
+  background-color: rgb(172, 154, 184);
   color: #fff;
 }
 
 .navbar {
-  /* border: solid 1px black; */
   height: 130px;
   background-color: rgb(143, 49, 231);
-  color: #fff;
   padding: 20px 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: #fff;
+}
+.navbar a{
+  color: white;
+  text-decoration: none;
 }
 
+/* Slider */
+.slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto; 
+  margin-top: 50px;
+  
+}
+
+.slider h1{
+  font-family: 'georgia';
+}
 /* SearchBar */
 .main_div {
   text-align: center;
   margin-top: 70px;
+}
+
+.aTageSearch{
+  color: #fff;
+  font-size: 25px;
+  text-decoration: none;
 }
 
 .inputTag {
@@ -77,6 +99,11 @@ body {
   .navbar h2 {
     margin: 10px 0;
   }
+
+  .slider h1 {
+    font-size: 24px;
+  }
+  
 }
 
 /* SearchBar */
@@ -98,6 +125,8 @@ body {
     padding: 6px;
     width: auto;
   }
+
+
 }
 
 /* ResipePage */
@@ -154,7 +183,8 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  max-width: 1200px; /* adjust the max-width to fit 4 items per line */
+  max-width: 1200px; 
+  color: black;
 }
 
 .litag {
@@ -163,7 +193,7 @@ body {
   border: 1px solid #ddd;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: calc(25% - 20px); /* adjust the width to fit 4 items per line */
+  width: calc(25% - 20px);
 }
 
 .litag:hover {
@@ -171,19 +201,28 @@ body {
 }
 
 .litag h2 {
-  font-size: 20px; /* increase the font size */
+  font-size: 20px; 
   margin-top: 0;
 }
 
 .litag p {
-  font-size: 16px; /* increase the font size */
-  color: #666;
+  font-size: 16px;
+  color: black;
+  
 }
 
 .litag img {
   width: 100%;
-  height: 150px; /* increase the image height */
+  height: 150px; 
   object-fit: cover;
   border-radius: 10px 10px 0 0;
 }
+.litaginfo{
+  background-color: #988f8f;
+  color: #000;
+  padding: 10px;
+  border-radius: 0 0 10px 10px ;
+  line-height: 25px;
+}
+
 

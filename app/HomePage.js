@@ -12,19 +12,23 @@ const HomePage = () => {
     }, []);
     return (
         <>
-                <div>
-                    <ul className='uiTag'>
-                        {recipes.map((recipe) => (
-                            <li className='litag' key={recipe.idMeal}>
-                                
-                                <img src={recipe.strMealThumb} alt={recipe.strMeal} />
-                                <h2>Name: {recipe.strMeal}</h2>
-                                <p>Category: {recipe.strCategory}</p>
-                                <p>Area: {recipe.strArea}</p>
-                            </li>
-                        ))}
-                    </ul>
-                </div>
+            <div className='slider'>
+                <h1>Welcome! Let's cook something delicious.</h1>
+            </div>
+            <div className='box'>
+                <ul className='uiTag'>
+                    {recipes.map((recipe) => (
+                        <li className='litag' key={recipe.idMeal}>
+                            <img src={recipe.strMealThumb} alt={recipe.strMeal} />
+                            <div className='litaginfo'>
+                            <h2>Name: {recipe.strMeal}</h2>
+                            <p>Category: {recipe.strCategory}</p>
+                            <p>Area: {recipe.strArea}</p>
+                            </div>
+                        </li>
+                    ))}
+                </ul>
+            </div>
         </>
     )
 }
