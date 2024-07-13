@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'georgia';
+  /* font-family: 'georgia'; */
 }
 
 body {
@@ -125,8 +125,6 @@ body {
     padding: 6px;
     width: auto;
   }
-
-
 }
 
 /* ResipePage */
@@ -224,5 +222,31 @@ body {
   border-radius: 0 0 10px 10px ;
   line-height: 25px;
 }
-
+@media (max-width: 768px) {
+  .slider {
+     /* styles for slider on smaller screens */
+     flex-direction: column;
+     height: auto;
+     padding: 20px;
+   }
+  .box {
+     /* styles for box on smaller screens */
+     width: 100%;
+     padding: 20px;
+   }
+  .uiTag {
+     /* styles for uiTag on smaller screens */
+     flex-wrap: wrap;
+     justify-content: center;
+   }
+  .litag {
+     /* styles for litag on smaller screens */
+     width: 50%;
+     margin: 10px;
+   }
+  .litaginfo {
+     /* styles for litaginfo on smaller screens */
+     font-size: 14px;
+   }
+ }
 
