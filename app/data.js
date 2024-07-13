@@ -2,7 +2,7 @@ const receipData = [
     {
       id: 1,
       name: "Veggie Delight",
-      image: "veggie_delight.jpg",
+      image: "",
       ingredients: ["Veggie patty", "Lettuce", "Tomato", "Cheese"],
       price: 250.00,
       quantity: 1,
