@@ -21,7 +21,7 @@ const HomePage = () => {
                         <li className='litag' key={recipe.idMeal}>
                             <img src={recipe.strMealThumb} alt={recipe.strMeal} />
                             <div className='litaginfo'>
-                            <h2>Name: {recipe.strMeal}</h2>
+                            <h2>Dish: {recipe.strMeal}</h2>
                             <p>Category: {recipe.strCategory}</p>
                             <p>Area: {recipe.strArea}</p>
                             </div>

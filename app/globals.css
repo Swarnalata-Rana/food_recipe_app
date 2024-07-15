@@ -33,7 +33,7 @@ body {
   justify-content: center;
   margin: auto;
   margin-top: 50px;
-
+  /* color: black; */
 }
 
 .greeting h1 {
@@ -68,6 +68,7 @@ body {
   border-radius: 7px;
   font-size: 20px;
   padding: 8px;
+  border: none;
 }
 
 /* RecipePage */
@@ -185,6 +186,11 @@ body {
   font-size: 15px;
   padding: 4px;
   margin-top: 10px;
+  border: none;
+}
+
+.recipe_click:hover {
+  background-color: #d32f2f;
 }
 
 /* .view{
@@ -285,32 +291,27 @@ body {
 /* HomePage */
 @media (max-width: 768px) {
   .greeting {
-    /* styles for slider on smaller screens */
     flex-direction: column;
     height: auto;
     padding: 20px;
   }
 
   .box {
-    /* styles for box on smaller screens */
     width: 100%;
     padding: 20px;
   }
 
   .uiTag {
-    /* styles for uiTag on smaller screens */
     flex-wrap: wrap;
     justify-content: center;
   }
 
   .litag {
-    /* styles for litag on smaller screens */
     width: 50%;
     margin: 10px;
   }
 
   .litaginfo {
-    /* styles for litaginfo on smaller screens */
     font-size: 14px;
   }
 }

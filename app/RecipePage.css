@@ -82,3 +82,19 @@
   justify-content: flex-end;
   padding-top: 10px;
 }
+
+.save_click{
+  margin-left: 50px;
+  /* background-color: rgb(143, 49, 231); */
+  background-color: #8d4e4e;
+  color: white;
+  border-radius: 4px;
+  font-size: 15px;
+  padding: 4px;
+  margin-top: 10px;
+  border: none;
+}
+
+.save_click:hover {
+  background-color: #45a049;
+}

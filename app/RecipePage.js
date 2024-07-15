@@ -14,6 +14,7 @@ const RecipePage = ({ recipes }) => {
         setShowModal(false);
     };
 
+
     if (!recipes) {
         return <div className='Not-found'>Sorry, This Recipe Is Not Available</div>;
     }
@@ -24,10 +25,11 @@ const RecipePage = ({ recipes }) => {
                 <div className="recipe-card" key={recipe.idMeal}>
                     <img className='img' src={recipe.strMealThumb} alt={recipe.strMeal} />
                     <div className="recipe-info">
-                        <p>Name:- {recipe.strMeal}</p>
+                        <p>Dish:- {recipe.strMeal}</p>
                         <p>Country:- {recipe.strArea}</p>
                         <p>Category:- {recipe.strCategory}</p>
-                        <button className='recipe_click' onClick={() => handleRecipeClick(recipe)}>Recipe</button>
+                        <button className='recipe_click' onClick={() => handleRecipeClick(recipe)}>ViewRecipe</button>
+                        <button className="save_click" onClick={''}>Save</button>
                     </div>
                 </div>
             ))}
