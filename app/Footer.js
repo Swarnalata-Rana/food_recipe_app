@@ -3,7 +3,9 @@ import React from 'react'
 const Footer = () => {
   return (
     <>
-        <div className='footerTag'>Navgurukul Class Project</div>
+      <div className='footerTag'>Navgurukul Hackathon Project
+        <div>Thank You!</div>
+      </div>
 
     </>
   )

@@ -20,31 +20,33 @@ body {
   align-items: center;
   color: #fff;
 }
-.navbar a{
+
+.navbar a {
   color: white;
   text-decoration: none;
 }
 
-/* Slider */
-.slider {
+/* HomePage */
+.greeting {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: auto; 
+  margin: auto;
   margin-top: 50px;
-  
+
 }
 
-.slider h1{
+.greeting h1 {
   font-family: 'georgia';
 }
+
 /* SearchBar */
 .main_div {
   text-align: center;
   margin-top: 70px;
 }
 
-.aTageSearch{
+.aTageSearch {
   color: #fff;
   font-size: 25px;
   text-decoration: none;
@@ -67,8 +69,9 @@ body {
   font-size: 20px;
   padding: 8px;
 }
+
 /* RecipePage */
-.recipe-page{
+.recipe-page {
   display: flex;
   text-align: center;
   justify-content: center;
@@ -78,13 +81,15 @@ body {
 .rounded-corners {
   border-radius: 10px;
 }
+
 /* footer */
-.footerTag{
-  height: 250px;
+.footerTag {
+  height: 200px;
   background-color: rgb(119, 30, 202);
   color: #fff;
   font-size: 40px;
   text-align: center;
+
 }
 
 /* NavBar */
@@ -103,7 +108,7 @@ body {
   .slider h1 {
     font-size: 24px;
   }
-  
+
 }
 
 /* SearchBar */
@@ -128,12 +133,13 @@ body {
 }
 
 /* ResipePage */
-.Not-found{
+.Not-found {
   font-size: 30px;
   color: black;
   text-align: center;
   margin-top: 100px;
 }
+
 .box {
   display: flex;
   flex-wrap: wrap;
@@ -152,9 +158,10 @@ body {
 .img {
   width: 100%;
   height: 150px;
-  object-fit: cover; 
+  object-fit: cover;
   border-radius: 10px 10px 0 0;
 }
+
 .img:hover {
   transform: scale(1.1);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
@@ -162,16 +169,27 @@ body {
   opacity: 0.8;
   border: 2px solid #fff;
 }
+
 .recipe-info {
   background-color: #988f8f;
   color: #000;
   padding: 10px;
-  border-radius: 0 0 10px 10px ;
+  border-radius: 0 0 10px 10px;
   line-height: 20px;
 }
-.view{
-  line-height: 40px;
+
+.recipe_click {
+  background-color: rgb(143, 49, 231);
+  color: white;
+  border-radius: 4px;
+  font-size: 15px;
+  padding: 4px;
+  margin-top: 10px;
 }
+
+/* .view{
+  line-height: 40px;
+} */
 /* HomePage */
 
 .uiTag {
@@ -181,7 +199,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  max-width: 1200px; 
+  max-width: 1200px;
   color: black;
 }
 
@@ -199,54 +217,154 @@ body {
 }
 
 .litag h2 {
-  font-size: 20px; 
+  font-size: 20px;
   margin-top: 0;
 }
 
 .litag p {
   font-size: 16px;
   color: black;
-  
+
 }
 
 .litag img {
   width: 100%;
-  height: 150px; 
+  height: 150px;
   object-fit: cover;
   border-radius: 10px 10px 0 0;
 }
-.litaginfo{
+
+.litaginfo {
   background-color: #988f8f;
   color: #000;
   padding: 10px;
-  border-radius: 0 0 10px 10px ;
+  border-radius: 0 0 10px 10px;
   line-height: 25px;
 }
-@media (max-width: 768px) {
-  .slider {
-     /* styles for slider on smaller screens */
-     flex-direction: column;
-     height: auto;
-     padding: 20px;
-   }
-  .box {
-     /* styles for box on smaller screens */
-     width: 100%;
-     padding: 20px;
-   }
-  .uiTag {
-     /* styles for uiTag on smaller screens */
-     flex-wrap: wrap;
-     justify-content: center;
-   }
-  .litag {
-     /* styles for litag on smaller screens */
-     width: 50%;
-     margin: 10px;
-   }
-  .litaginfo {
-     /* styles for litaginfo on smaller screens */
-     font-size: 14px;
-   }
- }
 
+/* NavBar */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  .navbar h1,
+  .navbar h2 {
+    margin: 10px 0;
+  }
+
+  .slider h1 {
+    font-size: 24px;
+  }
+
+}
+
+/* SearchBar */
+@media (max-width: 768px) {
+  .main_div {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  .inputTag {
+    font-size: 12px;
+    padding: 8px;
+    width: 100%;
+  }
+
+  .search-btn {
+    font-size: 16px;
+    padding: 6px;
+    width: auto;
+  }
+}
+
+/* HomePage */
+@media (max-width: 768px) {
+  .greeting {
+    /* styles for slider on smaller screens */
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  .box {
+    /* styles for box on smaller screens */
+    width: 100%;
+    padding: 20px;
+  }
+
+  .uiTag {
+    /* styles for uiTag on smaller screens */
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .litag {
+    /* styles for litag on smaller screens */
+    width: 50%;
+    margin: 10px;
+  }
+
+  .litaginfo {
+    /* styles for litaginfo on smaller screens */
+    font-size: 14px;
+  }
+}
+
+
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  max-width: 600px;
+  width: 100%;
+  max-height: 80%;
+  overflow-y: auto;
+  padding: 20px;
+}
+
+.modal-content {
+  padding: 20px;
+}
+
+.modal-body {
+  max-height: 60vh;
+  overflow-y: auto;
+}
+
+/* Scrollbar styling */
+.modal-body::-webkit-scrollbar {
+  width: 10px;
+}
+
+.modal-body::-webkit-scrollbar-thumb {
+  background: #b5b5ba;
+  border-radius: 16px;
+}
+
+.modal-body::-webkit-scrollbar-track {
+  background: #ebebeb;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 10px;
+}

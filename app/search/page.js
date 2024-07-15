@@ -15,6 +15,7 @@ const SearchBar = () => {
 
     return (
         <>
+            <div className='search-page'>
             <div className='main_div'>
                 <input
                     className='inputTag'
@@ -25,8 +26,8 @@ const SearchBar = () => {
                 <button className="search-btn" onClick={handleSearch}>Search</button>
             </div>
             <RecipePage recipes={recipes} />
+            </div>
         </>
     );
 };
-
 export default SearchBar;

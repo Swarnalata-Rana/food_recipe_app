@@ -1,6 +1,6 @@
 "use client"
 import React, { useState, useEffect } from 'react'
-import Navbar from './Navbar';
+// import Footer from './Footer';
 
 const HomePage = () => {
     const [recipes, setRecipes] = useState([]);
@@ -12,7 +12,7 @@ const HomePage = () => {
     }, []);
     return (
         <>
-            <div className='slider'>
+            <div className='greeting'>
                 <h1>Welcome! Let's cook something delicious.</h1>
             </div>
             <div className='box'>
@@ -29,8 +29,8 @@ const HomePage = () => {
                     ))}
                 </ul>
             </div>
+            {/* <Footer/> */}
         </>
     )
 }
-
 export default HomePage;
