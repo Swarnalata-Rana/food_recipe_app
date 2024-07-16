@@ -1,5 +1,5 @@
+"use client"
 import React, { useState } from 'react';
-import './RecipePage.css';
 
 const RecipePage = ({ recipes }) => {
     const [showModal, setShowModal] = useState(false);
@@ -29,7 +29,6 @@ const RecipePage = ({ recipes }) => {
                         <p>Country:- {recipe.strArea}</p>
                         <p>Category:- {recipe.strCategory}</p>
                         <button className='recipe_click' onClick={() => handleRecipeClick(recipe)}>ViewRecipe</button>
-                        <button className="save_click" onClick={''}>Save</button>
                     </div>
                 </div>
             ))}
@@ -80,3 +79,5 @@ const RecipePage = ({ recipes }) => {
 };
 
 export default RecipePage;
+
+

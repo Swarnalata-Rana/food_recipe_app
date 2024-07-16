@@ -41,7 +41,7 @@
 
 .close-modal {
   background-color: #161515;
-  color:rgb(215, 205, 205);
+  color: rgb(215, 205, 205);
   border: none;
   padding: 10px 20px;
   font-size: 16px;
@@ -51,6 +51,7 @@
 .close-modal:hover {
   background-color: #444;
 }
+
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -83,9 +84,8 @@
   padding-top: 10px;
 }
 
-.save_click{
+.save_click {
   margin-left: 50px;
-  /* background-color: rgb(143, 49, 231); */
   background-color: #8d4e4e;
   color: white;
   border-radius: 4px;
