@@ -28,7 +28,7 @@ const RecipePage = ({ recipes }) => {
                         <p>Dish:- {recipe.strMeal}</p>
                         <p>Country:- {recipe.strArea}</p>
                         <p>Category:- {recipe.strCategory}</p>
-                        <button className='recipe_click' onClick={() => handleRecipeClick(recipe)}>ViewRecipe</button>
+                        <button className='recipe_click' onClick={() => handleRecipeClick(recipe)}>View Recipe</button>
                     </div>
                 </div>
             ))}
