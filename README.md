@@ -5,7 +5,7 @@ Welcome to the Recipe App! This application allows users to browse, search, and 
 
 ## Demo
 
-You can check out the live demo of the app [here](foodrecipapp.netlify.app). (Replace `#` with the link to your deployed app)
+You can check out the live demo of the app [foodrecipapp.netlify.app].
 
 ## Features
 
