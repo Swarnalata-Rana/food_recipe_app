@@ -10,22 +10,24 @@ const SearchBar = () => {
         fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${query}`)
             .then(response => response.json())
             .then(data => setRecipes(data.meals))
-            // .catch(error => console.error('Error fetching data:', error));
+        // .catch(error => console.error('Error fetching data:', error));
     };
 
     return (
         <>
-            <div className='search-page'>
-            <div className='main_div'>
-                <input
-                    className='inputTag'
-                    placeholder='Search Your Menu'
-                    value={query}
-                    onChange={(e) => setQuery(e.target.value)}
-                />
-                <button className="search-btn" onClick={handleSearch}>Search</button>
-            </div>
-            <RecipePage recipes={recipes} />
+            <div>
+                <div className='search-page'>
+                    <div className='main_div'>
+                        <input
+                            className='inputTag'
+                            placeholder='Search Your Menu'
+                            value={query}
+                            onChange={(e) => setQuery(e.target.value)}
+                        />
+                        <button className="search-btn" onClick={handleSearch}>Search</button>
+                    </div>
+                    <RecipePage recipes={recipes} />
+                </div>
             </div>
         </>
     );

@@ -1,6 +1,7 @@
 "use client"
 import React, { useState, useEffect } from 'react'
 import Footer from './Footer';
+import MenuShow from './MenuShow';
 
 const HomePage = () => {
     const [recipes, setRecipes] = useState([]);
@@ -10,7 +11,7 @@ const HomePage = () => {
     useEffect(() => {
         fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=`)
             .then(response => response.json())
-            .then(data => setRecipes(data.meals.slice(0, 12)));
+            .then(data => setRecipes(data.meals.slice(0, 20)));
     }, []);
 
     const handleRecipeClick = (recipe) => {
@@ -84,7 +85,7 @@ const HomePage = () => {
                     </div>
                 </div>
             )}
-            <Footer/>
+            {/* <Footer/> */}
         </>
     )
 }
