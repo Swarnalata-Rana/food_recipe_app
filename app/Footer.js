@@ -11,14 +11,35 @@ const Footer = () => {
                         <div>
                             For better experience,download <br />the Swiggy app now
                         </div>
-                        <div className='logoTag'>
+                        {/* <div className='logoTag'>
                             <div>
                                 <img src='https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/portal/m/play_store.png' width='180px' />
                             </div>
                             <div>
                                 <img src='https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/portal/m/app_store.png' width='180px' />
                             </div>
+                        </div> */}
+                        <div className='logoTag'>
+                            <div>
+                                <a href="https://play.google.com/store" target="_blank" rel="noopener noreferrer">
+                                    <img
+                                        src='https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/portal/m/play_store.png'
+                                        width='180px'
+                                        alt="Google Play Store"
+                                    />
+                                </a>
+                            </div>
+                            <div>
+                                <a href="https://apps.apple.com/us/app/id1234567890" target="_blank" rel="noopener noreferrer">
+                                    <img
+                                        src='https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/portal/m/app_store.png'
+                                        width='180px'
+                                        alt="Apple App Store"
+                                    />
+                                </a>
+                            </div>
                         </div>
+
                     </div>
                 </div>
                 <div className='footerTag'>
@@ -50,13 +71,13 @@ const Footer = () => {
                             <div className='footerDTag'>
                                 We deviver to:
                             </div>
-                            <ul className='footerLiTag' >
+                            <ul className='footerLiTag'>
                                 <li><a>Bangalore</a></li>
                                 <li><a>Gurgaon</a></li>
                                 <li><a>Hyderabad</a></li>
                                 <li><a>Delhi</a></li>
                                 <li><a>Mumbai</a></li>
-                                <li><a>Punee</a></li>
+                                <li><a>Pune</a></li>
                             </ul>
                         </div>
                         <div >

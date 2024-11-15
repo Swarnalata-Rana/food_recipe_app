@@ -1,12 +1,12 @@
 "use client"
-import React, { useState, useEffect } from 'react'
-import Footer from './Footer';
-import MenuShow from './MenuShow';
+import React, { useState, useEffect } from 'react';
 
 const HomePage = () => {
     const [recipes, setRecipes] = useState([]);
     const [showModal, setShowModal] = useState(false);
     const [selectedRecipe, setSelectedRecipe] = useState(null);
+    const [rating, setRating] = useState(0);
+    const [recipeRatings, setRecipeRatings] = useState({}); // State to store ratings for each recipe
 
     useEffect(() => {
         fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=`)
@@ -17,10 +17,24 @@ const HomePage = () => {
     const handleRecipeClick = (recipe) => {
         setSelectedRecipe(recipe);
         setShowModal(true);
+        setRating(recipeRatings[recipe.idMeal] || 0); // Show saved rating if available
     };
 
     const handleCloseModal = () => {
         setShowModal(false);
+    };
+
+    const handleStarClick = (star) => {
+        // Toggle rating if the same star is clicked twice
+        setRating(prevRating => (prevRating === star ? star - 1 : star));
+    };
+
+    const handleSaveRating = () => {
+        setRecipeRatings(prevRatings => ({
+            ...prevRatings,
+            [selectedRecipe.idMeal]: rating, // Save rating for the current recipe
+        }));
+        setShowModal(false); // Close modal after saving rating
     };
 
     return (
@@ -37,6 +51,7 @@ const HomePage = () => {
                                 <h2>Dish: {recipe.strMeal}</h2>
                                 <p>Category: {recipe.strCategory}</p>
                                 <p>Area: {recipe.strArea}</p>
+                                <p>Rating: {recipeRatings[recipe.idMeal] || 'Not rated yet'}</p>
                                 <button className='recipe_click' onClick={() => handleRecipeClick(recipe)}>View Recipe</button>
                             </div>
                         </li>
@@ -75,6 +90,22 @@ const HomePage = () => {
                                 ) : (
                                     <p>No instructions available</p>
                                 )}
+                                <h3>Rate this Recipe:</h3>
+                                <div className="star-rating">
+                                    {[1, 2, 3, 4, 5].map((star) => (
+                                        <span
+                                            key={star}
+                                            className={star <= rating ? "star filled" : "star"}
+                                            onClick={() => handleStarClick(star)}
+                                        >
+                                            ★
+                                        </span>
+                                    ))}
+                                </div>
+                                <p>Your Rating: {rating} Stars</p>
+                                <button className="save-rating" onClick={handleSaveRating}>
+                                    Save Rating
+                                </button>
                             </div>
                             <div className="modal-footer">
                                 <button className="close-modal" onClick={handleCloseModal}>
@@ -85,8 +116,8 @@ const HomePage = () => {
                     </div>
                 </div>
             )}
-            {/* <Footer/> */}
         </>
-    )
+    );
 }
+
 export default HomePage;

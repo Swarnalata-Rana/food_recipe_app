@@ -5,6 +5,7 @@ import Footer from "./Footer";
 import MenuShow from "./MenuShow";
 import PapularDishes from "./PapularDishes";
 import ResturantChains from "./ResturantChains";
+import Slider from "./Slider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,9 +16,10 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
     return (
-        <html lang="en">
+        <html lang="en">x
             <body className={inter.className}>
                 <Navbar />
+                {/* <Slider/> */}
                 <MenuShow/>
                 {children}
                 <ResturantChains/>
