@@ -43,7 +43,7 @@ body {
 .seachSignin {
   display: flex;
   gap: 1rem;
-  width: 300px;
+  width: 320px;
   justify-content: space-between;
   align-items: center;
 }
