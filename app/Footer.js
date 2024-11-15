@@ -50,13 +50,13 @@ const Footer = () => {
                             <div className='footerDTag'>
                                 We deviver to:
                             </div>
-                            <ul className='footerLiTag'>
+                            <ul className='footerLiTag' >
                                 <li><a>Bangalore</a></li>
                                 <li><a>Gurgaon</a></li>
                                 <li><a>Hyderabad</a></li>
                                 <li><a>Delhi</a></li>
                                 <li><a>Mumbai</a></li>
-                                <li><a>Pune</a></li>
+                                <li><a>Punee</a></li>
                             </ul>
                         </div>
                         <div >
